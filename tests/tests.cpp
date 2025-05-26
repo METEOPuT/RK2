@@ -46,7 +46,7 @@ TEST(IteratorTest, isDoneTest) {
 TEST(IteratorTest, currentItemTest) {
     MockIterator mock;
 
-    EXPECT_CALL(mock, currentItemTest()).Times(1).WillOnce(::testing::Return(0));
+    EXPECT_CALL(mock, currentItem()).Times(1).WillOnce(::testing::Return(0));
 
     int result = mock.currentItem();
     EXPECT_EQ(result, 0);
