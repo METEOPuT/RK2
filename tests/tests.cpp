@@ -16,3 +16,38 @@ class MockAggregate : public IAggregate {
 public:
     MOCK_METHOD0(createIterator, IIterator*());
 };
+
+TEST(IteratorTest, firstTest) {
+    MockIterator mock;
+
+    EXPECT_CALL(mock, first()).Times(1).WillOnce(::testing::Return(0));
+
+    int result = mock.first();
+    EXPECT_EQ(result, 0);
+}
+
+TEST(IteratorTest, nextTest) {
+    MockIterator mock;
+
+    EXPECT_CALL(mock, next()).Times(1);
+
+    mock.next();
+}
+
+TEST(IteratorTest, isDoneTest) {
+    MockIterator mock;
+
+    EXPECT_CALL(mock, isDone()).Times(1).WillOnce(::testing::Return(0));
+
+    bool result = mock.isDone();
+    EXPECT_FALSE(result);
+}
+
+TEST(IteratorTest, currentItemTest) {
+    MockIterator mock;
+
+    EXPECT_CALL(mock, currentItemTest()).Times(1).WillOnce(::testing::Return(0));
+
+    int result = mock.currentItem();
+    EXPECT_EQ(result, 0);
+}
