@@ -31,7 +31,7 @@ jobs:
     run: ${{github.workspace}}/build/Iterator
 
   - name: Run tests
-    run: ${{github.workspace}}/build/Iterator
+    run: ${{github.workspace}}/build/my_test
 
   - name: package
     run: cmake --build ${{github.workspace}}/build --target package
