@@ -26,6 +26,7 @@ jobs:
       mkdir build && cd build
       cmake .. -DBUILD_TESTS=ON
       cmake --build .
+      tree
 
   - name: exe_file
     run: ${{github.workspace}}/build/Iterator
