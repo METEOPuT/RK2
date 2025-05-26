@@ -27,9 +27,6 @@ jobs:
       cmake .. -DBUILD_TESTS=ON
       cmake --build .
 
-  - name: exe_file
-    run: ${{github.workspace}}/build/Iterator
-
   - name: Run tests
     run: ${{github.workspace}}/build/my_test
 
