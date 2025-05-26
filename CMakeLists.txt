@@ -32,10 +32,10 @@ if(BUILD_TESTS)
     target_compile_options(gtest PUBLIC "-Wno-error=maybe-uninitialized")
     target_compile_options(gmock PUBLIC "-Wno-error=maybe-uninitialized")
 
-    add_executable(my_test tests/tests.cpp)
-    target_link_libraries(my_test gtest_main gmock_main Iterator)
+    add_executable(Iterator tests/tests.cpp)
+    target_link_libraries(Iterator gtest_main gmock_main Iterator)
 
-    add_test(NAME my_test COMMAND my_test)
+    add_test(NAME Iterator COMMAND Iterator)
 endif()
 
 install(TARGETS Iterator
