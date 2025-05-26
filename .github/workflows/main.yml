@@ -26,14 +26,12 @@ jobs:
       mkdir build && cd build
       cmake .. -DBUILD_TESTS=ON
       cmake --build .
-      apt install tree
-      tree
 
   - name: exe_file
     run: ${{github.workspace}}/build/Iterator
 
   - name: Run tests
-    run: ${{github.workspace}}/build/my_test
+    run: ${{github.workspace}}/build/Iterator
 
   - name: package
     run: cmake --build ${{github.workspace}}/build --target package
