@@ -51,3 +51,12 @@ TEST(IteratorTest, currentItemTest) {
     int result = mock.currentItem();
     EXPECT_EQ(result, 0);
 }
+
+TEST(AggregateTest, createIteratorTest) {
+    MockAggregate mock;
+
+    EXPECT_CALL(mock, createIterator()).Times(1);
+
+    mock.createIterator();
+
+}
