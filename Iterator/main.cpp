@@ -10,7 +10,7 @@ int main()
 
     for(; !iterator->isDone(); iterator->next())
     {
-        std::cout << "Item :" << iterator->currentItem(); << std::endl;
+        std::cout << "Item :" << iterator->currentItem() << std::endl;
     }
 
     return 0;

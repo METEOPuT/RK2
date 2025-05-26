@@ -1,0 +1,5 @@
+/home/kali/METEOPuT/workspace/tasks/RK2/build/CMakeFiles/edit_cache.dir
+/home/kali/METEOPuT/workspace/tasks/RK2/build/CMakeFiles/rebuild_cache.dir
+/home/kali/METEOPuT/workspace/tasks/RK2/build/Iterator/CMakeFiles/Iterator.dir
+/home/kali/METEOPuT/workspace/tasks/RK2/build/Iterator/CMakeFiles/edit_cache.dir
+/home/kali/METEOPuT/workspace/tasks/RK2/build/Iterator/CMakeFiles/rebuild_cache.dir

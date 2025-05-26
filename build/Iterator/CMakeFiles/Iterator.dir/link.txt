@@ -1,0 +1,2 @@
+/usr/bin/ar qc libIterator.a CMakeFiles/Iterator.dir/ConcreteAggregate.cpp.o CMakeFiles/Iterator.dir/ConcreteIterator.cpp.o CMakeFiles/Iterator.dir/main.cpp.o
+/usr/bin/ranlib libIterator.a
